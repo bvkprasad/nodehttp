@@ -1,7 +1,7 @@
 const http = require("http");
 const port = process.env.PORT || 80;
 const server = http.createServer((req,res)=>{
-    if(req.url === "/"){
+    if(req.url === "/hi"){
         res.write("hello world");
         res.end();
     }
